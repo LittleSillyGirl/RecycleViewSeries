@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="text_name_main">
+        <item>RecycleView的简单用法和抽取公共适配器</item>
+
+
+    </string-array>
+
+    <string-array name="text_cla_path_main">
+
+        <item>activity.simple.SimpleRVHomeActivity</item>
+
+    </string-array>
+
+    <string-array name="text_name_simple">
+        <item>RecycleView的简单用法和效果</item>
+        <item>RecycleView的ItemDecoration的详细介绍</item>
+
+
+    </string-array>
+
+    <string-array name="text_cla_path_simple">
+
+        <item>activity.simple.SimpleRVUseActivity</item>
+        <item>activity.divider.DividerDetailActivity</item>
+
+    </string-array>
+
+    <string-array name="text_name_itemdecoration">
+        <item>ItemDecoration之粘性头部</item>
+        <item>ItemDecoration之网状装饰线(竖着onDraw)</item>
+        <item>ItemDecoration之网状装饰线(竖着onDrawOver)</item>
+        <item>ItemDecoration之网状装饰线(横着onDrawOver)</item>
+        <item>ItemDecoration之实现添加头部和底部view(竖着)</item>
+        <item>ItemDecoration之实现添加头部和底部view(横着)</item>
+
+
+    </string-array>
+
+    <string-array name="text_cla_path_itemdecoration">
+
+        <item>view.ItemDecoration.SectionDecoratiom</item>
+        <item>view.ItemDecoration.GridDividerItemDecoration</item>
+        <item>view.ItemDecoration.GridDividerItemDecoration</item>
+        <item>view.ItemDecoration.GridDividerItemDecoration</item>
+        <item>view.ItemDecoration.HeadBottomItemDecoration</item>
+        <item>view.ItemDecoration.HeadBottomItemDecoration</item>
+
+    </string-array>
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_cc"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_5"
+        android:background="@color/white"
+        android:padding="@dimen/space_5"
+        android:text="RecycleView的简单用法,比如：
+    1、竖直布局、横着布局、网状布局、瀑布流等。
+    2、添加ItemDecoration和删除、增加的动画" />
+
+    <!--
+    <item>竖着线性</item>
+    <item>横着线性</item>
+    <item>竖着网状</item>
+    <item>横着网状</item>
+    <item>瀑布流</item>
+    前面这五个是单独的不能共存的， 说白了就是用 单选按钮
+
+    <item>分割线</item>
+    <item>添加</item>长按某个就是删除
+    就是一般的textview
+
+    <item>带动画</item>是否带动画
+    这三个是可以互相叠加且可以和上面叠加  说白了就是用chebox
+    -->
+
+    <RadioGroup
+        android:id="@+id/id_rg_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_5">
+
+        <RadioButton
+            android:id="@+id/id_rb_line"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="线性" />
+
+        <RadioButton
+            android:id="@+id/id_rb_grid"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="网状" />
+
+        <RadioButton
+            android:id="@+id/id_rb_masonry"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="瀑布流" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/id_rg_orientation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/space_30"
+        android:layout_marginTop="@dimen/space_5"
+        android:paddingRight="@dimen/space_30"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id_rb_v"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="竖着" />
+        <RadioButton
+            android:id="@+id/id_rb_h"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="横着" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/id_cb_decoration"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_weight="1"
+            android:text="是否分割线" />
+
+        <CheckBox
+            android:id="@+id/id_cb_anim"
+            android:layout_width="@dimen/space_0"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/space_30"
+            android:layout_weight="1"
+            android:text="是否动画" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_rv_content_sim_use"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_5"
+        android:background="@color/white"></android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
